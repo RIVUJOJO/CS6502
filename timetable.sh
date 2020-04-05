@@ -15,4 +15,4 @@ ZIPFILE=$(echo $RESPONSE | tr '\"' '\n' | grep zip)
 echo $ZIPFILE
 curl -o $LM056.zip $ZIPFILE
 
-done
+#done
