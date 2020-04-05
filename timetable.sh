@@ -12,7 +12,7 @@ PARAMS="__EVENTTARGET=ctl00%24HeaderContent%24CourseDropdown&__EVENTARGUMENT=&__
 RESPONSE=$(curl -X POST --data "$PARAMS" http://timetable.ul.ie/UA/CourseTimetable.aspx)
 #echo "Received $RESPONSE"
 #ZIPFILE=$(echo $RESPONSE | tr '\"' '\n' | grep zip)
-#echo $ZIPFILE
+echo $RESPONSE
 curl -o LM485.html $RESPONSE
 
 #done
