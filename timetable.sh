@@ -13,6 +13,6 @@ RESPONSE=$(curl -X POST --data "$PARAMS" http://timetable.ul.ie/UA/CourseTimetab
 #echo "Received $RESPONSE"
 #ZIPFILE=$(echo $RESPONSE | tr '\"' '\n' | grep zip)
 #echo $ZIPFILE
-curl -o LM485.html $Response
+curl -o LM485.html $RESPONSE
 
 #done
